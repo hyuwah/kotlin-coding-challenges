@@ -52,7 +52,7 @@ multiple times and be persistent over time.
 **Beginner**
 
 - [x] [Capitalize sentence](src/test/kotlin/com/igorwojda/string/capitalizesentence)
-- [ ] [Get odd numbers](src/test/kotlin/com/igorwojda/integer/getodd)
+- [x] [Get odd numbers](src/test/kotlin/com/igorwojda/integer/getodd)
 - [ ] [Range contains range?](src/test/kotlin/com/igorwojda/range/containsrange)
 - [ ] [Add up to](src/test/kotlin/com/igorwojda/integer/addupto)
 - [ ] [Linear search](src/test/kotlin/com/igorwojda/list/search/linearsearch)
