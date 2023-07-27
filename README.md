@@ -58,7 +58,7 @@ multiple times and be persistent over time.
 - [x] [Linear search](src/test/kotlin/com/igorwojda/list/search/linearsearch)
 - [x] [Count down](src/test/kotlin/com/igorwojda/integer/countdown)
 - [x] [Count up and down](src/test/kotlin/com/igorwojda/integer/countupanddown)
-- [ ] [Format train route](src/test/kotlin/com/igorwojda/list/formattrainroute)
+- [x] [Format train route](src/test/kotlin/com/igorwojda/list/formattrainroute)
 - [ ] [Generate all pairs](src/test/kotlin/com/igorwojda/integer/generateallpairs)
 - [ ] [Count unique values](src/test/kotlin/com/igorwojda/list/countuniquevalues)
 - [ ] [Print number](src/test/kotlin/com/igorwojda/integer/printnumber/basic)
