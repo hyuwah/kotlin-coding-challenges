@@ -60,7 +60,7 @@ multiple times and be persistent over time.
 - [x] [Count up and down](src/test/kotlin/com/igorwojda/integer/countupanddown)
 - [x] [Format train route](src/test/kotlin/com/igorwojda/list/formattrainroute)
 - [x] [Generate all pairs](src/test/kotlin/com/igorwojda/integer/generateallpairs)
-- [ ] [Count unique values](src/test/kotlin/com/igorwojda/list/countuniquevalues)
+- [x] [Count unique values](src/test/kotlin/com/igorwojda/list/countuniquevalues)
 - [ ] [Print number](src/test/kotlin/com/igorwojda/integer/printnumber/basic)
 - [ ] [Print number with steps](src/test/kotlin/com/igorwojda/integer/printnumber/steps)
 - [ ] [Power](src/test/kotlin/com/igorwojda/integer/power)
