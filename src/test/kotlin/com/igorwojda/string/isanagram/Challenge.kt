@@ -1,10 +1,51 @@
 package com.igorwojda.string.isanagram
 
+import com.igorwojda.utility.logExecutionTimeNano
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
 private fun isAnagram(str1: String, str2: String): Boolean {
-    TODO("Add your solution here")
+    return logExecutionTimeNano { SolutionA.isAnagram(str1, str2) }
+}
+
+private object SolutionA {
+    fun isAnagram(str1: String, str2: String): Boolean {
+        // ignore special char, space & case
+        val filteredStr1 = str1.filter { it.isLetterOrDigit() }.lowercase()
+        val filteredStr2 = str2.filter { it.isLetterOrDigit() }.lowercase()
+
+        if (filteredStr1.length != filteredStr2.length) return false // both str should have same length
+
+        val charFreqMap = mutableMapOf<Char, Int>()
+
+        // intuition: char freq should be the same (i.e. cancel each other resulting 0 value)
+        for (i in filteredStr1.indices) { // using either indices is fine
+            charFreqMap[filteredStr1[i]] = charFreqMap.getOrDefault(filteredStr1[i], 0).inc()
+            charFreqMap[filteredStr2[i]] = charFreqMap.getOrDefault(filteredStr2[i], 0).dec()
+        }
+
+        charFreqMap.values.forEach {
+            if (it != 0) return false
+        }
+
+        return true
+    }
+}
+
+/**
+ *
+ */
+private object SolutionB {
+    fun isAnagram(str1: String, str2: String): Boolean {
+        // ignore special char, space & case
+        val filteredStr1 = str1.filter { it.isLetterOrDigit() }.lowercase()
+        val filteredStr2 = str2.filter { it.isLetterOrDigit() }.lowercase()
+
+        if (filteredStr1.length != filteredStr2.length) return false // both str should have same length
+
+        // basically the same as SolutionA but with built-in function
+        return filteredStr1.groupBy { it } == filteredStr2.groupBy { it }
+    }
 }
 
 private class Test {
