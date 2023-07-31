@@ -85,6 +85,8 @@ multiple times and be persistent over time.
 - [ ] [Fizz Buzz](src/test/kotlin/com/igorwojda/integer/fizzbuzz)
 - [ ] [Caesar Cipher](src/test/kotlin/com/igorwojda/string/caesarcipher)
 - [ ] [Has repeated char](src/test/kotlin/com/igorwojda/string/hasrepeatedcharacter)
+- [ ] [Smallest elements](src/test/kotlin/com/igorwojda/list/smallestelements)
+- [ ] [Largest elements](src/test/kotlin/com/igorwojda/list/largestelements)
 
 **Advanced** 
 
@@ -101,7 +103,8 @@ multiple times and be persistent over time.
 - [ ] [Get duplicated arguments](src/test/kotlin/com/igorwojda/string/getduplicatedarguments)
 - [ ] [Find pair with target average](src/test/kotlin/com/igorwojda/list/pairaverage)
 - [ ] [Binary search tree](src/test/kotlin/com/igorwojda/tree/binarysearchtree)
-- [ ] [Tree traversal](src/test/kotlin/com/igorwojda/tree/multiway/traversal)
+- [ ] [Tree traversal (breath first)](src/test/kotlin/com/igorwojda/tree/multiway/traversal/breathfirst)
+- [ ] [Tree traversal (depth first)](src/test/kotlin/com/igorwojda/tree/multiway/traversal/depthfirst)
 - [ ] [Tree level width](src/test/kotlin/com/igorwojda/tree/multiway/levelwidth)
 - [ ] [Binary search tree (insert)](src/test/kotlin/com/igorwojda/tree/binarytree/insert)
 - [ ] [Binary search tree (validate)](src/test/kotlin/com/igorwojda/tree/binarytree/validate)
@@ -114,7 +117,7 @@ multiple times and be persistent over time.
 - [ ] [Radix sort](src/test/kotlin/com/igorwojda/list/sort/radixsort)
 - [ ] [Doubly linked list](src/test/kotlin/com/igorwojda/linkedlist/doubly/base)
 - [ ] [Max binary heap](src/test/kotlin/com/igorwojda/tree/heap/maxbinaryheap)
-- [ ] [Add Numbers](src/test/kotlin/com/igorwojda/linkedlist/singly/addnumbers)
+- [ ] [Add numbers](src/test/kotlin/com/igorwojda/linkedlist/singly/addnumbers)
 
 **Expert**
 
@@ -131,7 +134,13 @@ multiple times and be persistent over time.
 - [ ] [Min sub list length](src/test/kotlin/com/igorwojda/list/minsublistlength)
 - [ ] [Subtract](src/test/kotlin/com/igorwojda/list/subtract)
 - [ ] [Coins](src/test/kotlin/com/igorwojda/list/coins)
-- [ ] [Medan Of Sorted Lists](src/test/kotlin/com/igorwojda/list/medianoftwosorted/README.md)
+- [ ] [Median of sorted lists](src/test/kotlin/com/igorwojda/list/medianoftwosorted/README.md)
+- [ ] [LRU Cache](src/test/kotlin/com/igorwojda/cache/lru)
+- [ ] [Advanced Cache](src/test/kotlin/com/igorwojda/cache/advancedlru)
+
+# Troubleshoot
+
+If you don't see the green play icon used to run the tests try to open `Settings` > `Build, Execution, Deployment` > `Build tools` > `Gradle` and set `Gradle JVM` to a different version.
 
 # Useful links
 
