@@ -1,10 +1,24 @@
 package com.igorwojda.string.maxoccurringchar
 
+import com.igorwojda.utility.logExecutionTimeNano
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
 private fun maxOccurringChar(str: String): Char? {
-    TODO("Add your solution here")
+    return logExecutionTimeNano { SolutionA.maxOccurringChar(str) }
+}
+
+/**
+ * Frequency Map approach
+ */
+private object SolutionA {
+    fun maxOccurringChar(str: String): Char? {
+        val freqMap = mutableMapOf<Char, Int>()
+        str.forEach { c ->
+            freqMap[c] = freqMap.getOrDefault(c, 0) + 1
+        }
+        return freqMap.maxByOrNull { it.value }?.key
+    }
 }
 
 private class Test {
