@@ -1,10 +1,26 @@
 package com.igorwojda.string.ispalindrome.basic
 
+import com.igorwojda.utility.logExecutionTimeNano
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
 private fun isPalindrome(str: String): Boolean {
-    TODO("Add your solution here")
+    return logExecutionTimeNano { SolutionA.isPalindrome(str) }
+}
+
+/**
+ * Two pointer approach
+ */
+private object SolutionA {
+    fun isPalindrome(str: String): Boolean {
+        var right = str.lastIndex
+        for (left in str.indices) {
+            if (right < left) return true
+            if (str[left] != str[right]) return false
+            right--
+        }
+        return true
+    }
 }
 
 private class Test {

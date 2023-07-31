@@ -72,7 +72,7 @@ multiple times and be persistent over time.
 
 **Intermediate**
 
-- [ ] [Is palindrome](src/test/kotlin/com/igorwojda/string/ispalindrome/basic)
+- [x] [Is palindrome](src/test/kotlin/com/igorwojda/string/ispalindrome/basic)
 - [ ] [Is tolerant palindrome](src/test/kotlin/com/igorwojda/string/ispalindrome/tolerant)
 - [ ] [Is permutation palindrome](src/test/kotlin/com/igorwojda/string/ispalindrome/permutation)
 - [x] [Is anagram](src/test/kotlin/com/igorwojda/string/isanagram)
