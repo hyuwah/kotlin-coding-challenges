@@ -81,7 +81,7 @@ multiple times and be persistent over time.
 - [ ] [Find the vowels](src/test/kotlin/com/igorwojda/string/vowels)
 - [x] [Int reverse](src/test/kotlin/com/igorwojda/integer/reverse)
 - [x] [Pyramid generator](src/test/kotlin/com/igorwojda/integer/pyramidgenerator)
-- [ ] [Steps generator](src/test/kotlin/com/igorwojda/integer/stepsgenerator)
+- [x] [Steps generator](src/test/kotlin/com/igorwojda/integer/stepsgenerator)
 - [ ] [Fizz Buzz](src/test/kotlin/com/igorwojda/integer/fizzbuzz)
 - [ ] [Caesar Cipher](src/test/kotlin/com/igorwojda/string/caesarcipher)
 - [ ] [Has repeated char](src/test/kotlin/com/igorwojda/string/hasrepeatedcharacter)

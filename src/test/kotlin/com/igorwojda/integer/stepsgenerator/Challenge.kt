@@ -1,10 +1,30 @@
 package com.igorwojda.integer.stepsgenerator
 
+import com.igorwojda.utility.logExecutionTimeNano
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
 fun generateSteps(n: Int): List<String> {
-    TODO("Add your solution here")
+    return logExecutionTimeNano { SolutionA.generateSteps(n) }
+}
+
+private object SolutionA {
+    fun generateSteps(n: Int): List<String> {
+        val result = mutableListOf<String>()
+        for (i in 0 until n) {
+            val row = buildString {
+                for (j in 0 until n) {
+                    if (j <= i) {
+                        append("#")
+                    } else {
+                        append(" ")
+                    }
+                }
+            }
+            result.add(row)
+        }
+        return result
+    }
 }
 
 private class Test {
