@@ -1,10 +1,32 @@
 package com.igorwojda.integer.pyramidgenerator
 
+import com.igorwojda.utility.logExecutionTimeNano
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
 fun generatePyramid(n: Int): List<String> {
-    TODO("Add your solution here")
+    return logExecutionTimeNano { SolutionA.generatePyramid(n) }
+}
+
+private object SolutionA {
+    fun generatePyramid(n: Int): List<String> {
+        val result = mutableListOf<String>()
+        for (i in 0 until n) {
+            val maxColumns = (2 * n) - 1
+            val midPoint = maxColumns / 2
+            val row = buildString {
+                for (j in 0 until maxColumns) {
+                    if (j in (midPoint-i)..(midPoint+i)) {
+                        append("#")
+                    } else {
+                        append(" ")
+                    }
+                }
+            }
+            result.add(row)
+        }
+        return result
+    }
 }
 
 private class Test {
