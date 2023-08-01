@@ -124,7 +124,7 @@ multiple times and be persistent over time.
 - [ ] [Chunk](src/test/kotlin/com/igorwojda/list/chunk)
 - [ ] [Singly linked list](src/test/kotlin/com/igorwojda/linkedlist/singly/base)
 - [ ] [Linked list midpoint](src/test/kotlin/com/igorwojda/linkedlist/singly/midpoint)
-- [ ] [Circular check](src/test/kotlin/com/igorwojda/linkedlist/singly/circularcheck)
+- [x] [Circular check](src/test/kotlin/com/igorwojda/linkedlist/singly/circularcheck)
 - [ ] [Linked list take n-th element from last](src/test/kotlin/com/igorwojda/linkedlist/singly/fromlast)
 - [ ] [Is sub string](src/test/kotlin/com/igorwojda/string/issubstring)
 - [ ] [Merge sort](src/test/kotlin/com/igorwojda/list/sort/mergesort)
