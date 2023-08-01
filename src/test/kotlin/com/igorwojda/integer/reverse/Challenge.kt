@@ -1,10 +1,22 @@
 package com.igorwojda.integer.reverse
 
+import com.igorwojda.utility.logExecutionTimeNano
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
+import kotlin.math.sign
 
 private fun reverseInt(i: Int): Int {
-    TODO("Add your solution here")
+    return logExecutionTimeNano { SolutionA.reverseInt(i) }
+}
+
+private object SolutionA {
+    fun reverseInt(i: Int): Int {
+        val reversedI = i.toString()
+            .removePrefix("-")
+            .reversed()
+            .toIntOrNull() ?: 0
+        return reversedI * i.sign
+    }
 }
 
 private class Test {

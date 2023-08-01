@@ -79,7 +79,7 @@ multiple times and be persistent over time.
 - [x] [Max occurring char](src/test/kotlin/com/igorwojda/string/maxoccurringchar)
 - [x] [String reverse](src/test/kotlin/com/igorwojda/string/reverse)
 - [ ] [Find the vowels](src/test/kotlin/com/igorwojda/string/vowels)
-- [ ] [Int reverse](src/test/kotlin/com/igorwojda/integer/reverse)
+- [x] [Int reverse](src/test/kotlin/com/igorwojda/integer/reverse)
 - [ ] [Pyramid generator](src/test/kotlin/com/igorwojda/integer/pyramidgenerator)
 - [ ] [Steps generator](src/test/kotlin/com/igorwojda/integer/stepsgenerator)
 - [ ] [Fizz Buzz](src/test/kotlin/com/igorwojda/integer/fizzbuzz)
