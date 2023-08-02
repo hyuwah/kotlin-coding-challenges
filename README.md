@@ -110,7 +110,7 @@ multiple times and be persistent over time.
 - [ ] [Binary search tree (validate)](src/test/kotlin/com/igorwojda/tree/binarytree/validate)
 - [ ] [Any callback](src/test/kotlin/com/igorwojda/common/anycallback)
 - [ ] [Flatten](src/test/kotlin/com/igorwojda/list/flatten)
-- [ ] [Binary search](src/test/kotlin/com/igorwojda/list/search/binarysearch)
+- [x] [Binary search](src/test/kotlin/com/igorwojda/list/search/binarysearch)
 - [ ] [Surrounded letter](src/test/kotlin/com/igorwojda/string/surroundedletter)
 - [ ] [Insertion sort](src/test/kotlin/com/igorwojda/list/sort/insertionsort)
 - [ ] [Quick sort](src/test/kotlin/com/igorwojda/list/sort/quicksort)

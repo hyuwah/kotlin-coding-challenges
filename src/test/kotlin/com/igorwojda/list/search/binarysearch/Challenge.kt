@@ -1,10 +1,27 @@
 package com.igorwojda.list.search.binarysearch
 
+import com.igorwojda.utility.logExecutionTimeNano
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
 private fun binarySearch(list: List<Char>, element: Char): Int {
-    TODO("Add your solution here")
+    return logExecutionTimeNano { SolutionA.binarySearch(list, element) }
+}
+
+private object SolutionA {
+    fun binarySearch(list: List<Char>, element: Char): Int {
+        var left = 0
+        var right = list.lastIndex
+        while (left <= right) {
+            val mid = left + ((right - left) / 2) // calculate mid-pointer, will be rounded down & used as index
+            when {
+                element == list[mid] -> return mid // found the char, return the mid-pointer index
+                element - 'A' < list[mid] - 'A' -> right = mid - 1 // element is on the left side of mid, adjust right boundary
+                element - 'A' > list[mid] - 'A' -> left = mid + 1 // element is on the right side of mid, adjust left boundary
+            }
+        }
+        return -1 // reduced the list & element still not found, return -1
+    }
 }
 
 private class Test {
@@ -44,7 +61,7 @@ private class Test {
     }
 
     @Test
-    fun `index of D in A, B, C, D is 2`() {
+    fun `index of D in A, B, C, D is 3`() {
         binarySearch(listOf('A', 'B', 'C', 'D'), 'D') shouldBeEqualTo 3
     }
 
