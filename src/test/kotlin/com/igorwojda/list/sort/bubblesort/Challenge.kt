@@ -1,10 +1,29 @@
 package com.igorwojda.list.sort.bubblesort
 
+import com.igorwojda.utility.logExecutionTimeNano
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
 private fun bubbleSort(list: List<Int>): List<Number> {
-    TODO("Add your solution here")
+    return logExecutionTimeNano { SolutionA.bubbleSort(list) }
+}
+
+private object SolutionA {
+    fun bubbleSort(list: List<Int>): List<Number> {
+        val result = list.toMutableList()
+        for (i in list.indices) {
+            for (j in 0 until list.lastIndex) {
+                var current = result[j]
+                val next = result[j + 1]
+                if (current > next) {
+                    current += next
+                    result[j + 1] = current - next
+                    result[j] = current - result[j + 1]
+                }
+            }
+        }
+        return result
+    }
 }
 
 private class Test {

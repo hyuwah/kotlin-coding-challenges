@@ -95,7 +95,7 @@ multiple times and be persistent over time.
 - [ ] [Queue](src/test/kotlin/com/igorwojda/queue/basic)
 - [ ] [Combine queues](src/test/kotlin/com/igorwojda/queue/combine)
 - [ ] [Stack](src/test/kotlin/com/igorwojda/stack/basic)
-- [ ] [Bubble sort](src/test/kotlin/com/igorwojda/list/sort/bubblesort)
+- [x] [Bubble sort](src/test/kotlin/com/igorwojda/list/sort/bubblesort)
 - [ ] [Selection sort](src/test/kotlin/com/igorwojda/list/sort/selectionsort)
 - [ ] [Square equals](src/test/kotlin/com/igorwojda/list/squareequal)
 - [ ] [Sum zero](src/test/kotlin/com/igorwojda/list/sumzero)
