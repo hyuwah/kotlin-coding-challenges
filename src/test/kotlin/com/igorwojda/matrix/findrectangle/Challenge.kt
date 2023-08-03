@@ -1,10 +1,29 @@
 package com.igorwojda.matrix.findrectangle
 
+import com.igorwojda.utility.logExecutionTimeNano
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
 private fun findRectangle(image: List<List<Int>>): List<Int>? {
-    TODO("Add your solution here")
+    return logExecutionTimeNano { SolutionA.findRectangle(image) }
+}
+
+private object SolutionA {
+    fun findRectangle(image: List<List<Int>>): List<Int> {
+        var topLeftCoord = mutableListOf(Int.MAX_VALUE, Int.MAX_VALUE)
+        var bottomRightCoord = mutableListOf(0,0)
+        image.forEachIndexed { col, nums ->
+            nums.forEachIndexed { row, num ->
+                if (num == 0) {
+                    if (topLeftCoord[0] >= col) topLeftCoord[0] = col
+                    if (topLeftCoord[1] >= row) topLeftCoord[1] = row
+                    if (bottomRightCoord[0] <= col) bottomRightCoord[0] = col
+                    if (bottomRightCoord[1] <= row) bottomRightCoord[1] = row
+                }
+            }
+        }
+        return topLeftCoord + bottomRightCoord
+    }
 }
 
 private class Test {

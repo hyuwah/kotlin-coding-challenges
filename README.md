@@ -91,7 +91,7 @@ multiple times and be persistent over time.
 **Advanced** 
 
 - [ ] [Spiral matrix generator](src/test/kotlin/com/igorwojda/matrix/spiralmatrixgenerator)
-- [ ] [Find rectangle](src/test/kotlin/com/igorwojda/matrix/findrectangle)
+- [x] [Find rectangle](src/test/kotlin/com/igorwojda/matrix/findrectangle)
 - [ ] [Queue](src/test/kotlin/com/igorwojda/queue/basic)
 - [ ] [Combine queues](src/test/kotlin/com/igorwojda/queue/combine)
 - [ ] [Stack](src/test/kotlin/com/igorwojda/stack/basic)
