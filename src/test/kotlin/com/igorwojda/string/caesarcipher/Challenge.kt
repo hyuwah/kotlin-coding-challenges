@@ -1,10 +1,36 @@
 package com.igorwojda.string.caesarcipher
 
+import com.igorwojda.utility.logExecutionTimeNano
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
 private fun encodeCaesarCipher(str: String, shift: Int): String {
-    TODO("Add your solution here")
+    return logExecutionTimeNano { SolutionB.encodeCaesarCipher(str, shift) }
+}
+
+private object SolutionA {
+    fun encodeCaesarCipher(str: String, shift: Int): String {
+        val alphabet = "abcdefghijklmnopqrstuvwxyz"
+        return str.map {
+            val shiftedIndex = (it - alphabet[0] + shift) % alphabet.length
+            alphabet[shiftedIndex]
+        }.joinToString("")
+    }
+}
+
+/**
+ * Faster than [SolutionA]
+ */
+private object SolutionB {
+    fun encodeCaesarCipher(str: String, shift: Int): String {
+        val alphabet = "abcdefghijklmnopqrstuvwxyz"
+        return buildString {
+            str.forEach {
+                val shiftedIndex = (it - alphabet[0] + shift) % alphabet.length
+                append(alphabet[shiftedIndex])
+            }
+        }
+    }
 }
 
 private class Test {
