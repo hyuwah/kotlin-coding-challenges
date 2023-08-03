@@ -99,7 +99,7 @@ multiple times and be persistent over time.
 - [ ] [Selection sort](src/test/kotlin/com/igorwojda/list/sort/selectionsort)
 - [ ] [Square equals](src/test/kotlin/com/igorwojda/list/squareequal)
 - [ ] [Sum zero](src/test/kotlin/com/igorwojda/list/sumzero)
-- [ ] [Digit frequency](src/test/kotlin/com/igorwojda/integer/digitfrequency)
+- [x] [Digit frequency](src/test/kotlin/com/igorwojda/integer/digitfrequency)
 - [ ] [Get duplicated arguments](src/test/kotlin/com/igorwojda/string/getduplicatedarguments)
 - [ ] [Find pair with target average](src/test/kotlin/com/igorwojda/list/pairaverage)
 - [ ] [Binary search tree](src/test/kotlin/com/igorwojda/tree/binarysearchtree)
