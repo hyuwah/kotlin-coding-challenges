@@ -82,7 +82,7 @@ multiple times and be persistent over time.
 - [x] [Int reverse](src/test/kotlin/com/igorwojda/integer/reverse)
 - [x] [Pyramid generator](src/test/kotlin/com/igorwojda/integer/pyramidgenerator)
 - [x] [Steps generator](src/test/kotlin/com/igorwojda/integer/stepsgenerator)
-- [ ] [Fizz Buzz](src/test/kotlin/com/igorwojda/integer/fizzbuzz)
+- [x] [Fizz Buzz](src/test/kotlin/com/igorwojda/integer/fizzbuzz)
 - [ ] [Caesar Cipher](src/test/kotlin/com/igorwojda/string/caesarcipher)
 - [ ] [Has repeated char](src/test/kotlin/com/igorwojda/string/hasrepeatedcharacter)
 - [ ] [Smallest elements](src/test/kotlin/com/igorwojda/list/smallestelements)

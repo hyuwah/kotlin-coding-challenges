@@ -1,10 +1,24 @@
 package com.igorwojda.integer.fizzbuzz
 
+import com.igorwojda.utility.logExecutionTimeNano
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
 private fun fizzBuzz(n: Int): List<String> {
-    TODO("Add your solution here")
+    return logExecutionTimeNano { SolutionA.fizzBuzz(n) }
+}
+
+private object SolutionA {
+    fun fizzBuzz(n: Int): List<String> {
+        return (1..n).map {
+            when {
+                it % (3 * 5) == 0 -> "FizzBuzz"
+                it % 5 == 0 -> "Buzz"
+                it % 3 == 0 -> "Fizz"
+                else -> it.toString()
+            }
+        }
+    }
 }
 
 private class Test {
