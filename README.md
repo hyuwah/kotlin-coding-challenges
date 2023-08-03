@@ -84,7 +84,7 @@ multiple times and be persistent over time.
 - [x] [Steps generator](src/test/kotlin/com/igorwojda/integer/stepsgenerator)
 - [x] [Fizz Buzz](src/test/kotlin/com/igorwojda/integer/fizzbuzz)
 - [x] [Caesar Cipher](src/test/kotlin/com/igorwojda/string/caesarcipher)
-- [ ] [Has repeated char](src/test/kotlin/com/igorwojda/string/hasrepeatedcharacter)
+- [x] [Has repeated char](src/test/kotlin/com/igorwojda/string/hasrepeatedcharacter)
 - [ ] [Smallest elements](src/test/kotlin/com/igorwojda/list/smallestelements)
 - [ ] [Largest elements](src/test/kotlin/com/igorwojda/list/largestelements)
 

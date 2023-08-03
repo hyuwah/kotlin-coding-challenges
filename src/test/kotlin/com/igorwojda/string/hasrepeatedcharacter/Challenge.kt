@@ -1,10 +1,22 @@
 package com.igorwojda.string.hasrepeatedcharacter
 
+import com.igorwojda.utility.logExecutionTimeNano
 import org.amshove.kluent.shouldBeEqualTo
 import org.junit.jupiter.api.Test
 
 private fun hasRepeatedChar(str: String): Boolean {
-    TODO("Add your solution here")
+    return logExecutionTimeNano { SolutionA.hasRepeatedChar(str) }
+}
+
+private object SolutionA {
+    fun hasRepeatedChar(str: String): Boolean {
+        val charSet = mutableSetOf<Char>()
+        str.forEach {
+            val charExists = !charSet.add(it)
+            if (charExists) return true
+        }
+        return false
+    }
 }
 
 private class Test {
