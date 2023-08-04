@@ -68,7 +68,7 @@ multiple times and be persistent over time.
 - [x] [Product](src/test/kotlin/com/igorwojda/list/product)
 - [x] [Capitalize first](src/test/kotlin/com/igorwojda/list/capitalizefirst)
 - [x] [Decapitalize const](src/test/kotlin/com/igorwojda/string/decapitalizeconst)
-- [ ] [Longest word](src/test/kotlin/com/igorwojda/string/longestword)
+- [x] [Longest word](src/test/kotlin/com/igorwojda/string/longestword)
 
 **Intermediate**
 
