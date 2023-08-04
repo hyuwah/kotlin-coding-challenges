@@ -64,7 +64,7 @@ multiple times and be persistent over time.
 - [x] [Print number](src/test/kotlin/com/igorwojda/integer/printnumber/basic)
 - [x] [Print number with steps](src/test/kotlin/com/igorwojda/integer/printnumber/steps)
 - [x] [Power](src/test/kotlin/com/igorwojda/integer/power)
-- [ ] [Factorial](src/test/kotlin/com/igorwojda/integer/factorial)
+- [x] [Factorial](src/test/kotlin/com/igorwojda/integer/factorial)
 - [ ] [Product](src/test/kotlin/com/igorwojda/list/product)
 - [ ] [Capitalize first](src/test/kotlin/com/igorwojda/list/capitalizefirst)
 - [ ] [Decapitalize const](src/test/kotlin/com/igorwojda/string/decapitalizeconst)
