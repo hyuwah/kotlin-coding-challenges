@@ -62,7 +62,7 @@ multiple times and be persistent over time.
 - [x] [Generate all pairs](src/test/kotlin/com/igorwojda/integer/generateallpairs)
 - [x] [Count unique values](src/test/kotlin/com/igorwojda/list/countuniquevalues)
 - [x] [Print number](src/test/kotlin/com/igorwojda/integer/printnumber/basic)
-- [ ] [Print number with steps](src/test/kotlin/com/igorwojda/integer/printnumber/steps)
+- [x] [Print number with steps](src/test/kotlin/com/igorwojda/integer/printnumber/steps)
 - [ ] [Power](src/test/kotlin/com/igorwojda/integer/power)
 - [ ] [Factorial](src/test/kotlin/com/igorwojda/integer/factorial)
 - [ ] [Product](src/test/kotlin/com/igorwojda/list/product)
