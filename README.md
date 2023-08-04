@@ -67,7 +67,7 @@ multiple times and be persistent over time.
 - [x] [Factorial](src/test/kotlin/com/igorwojda/integer/factorial)
 - [x] [Product](src/test/kotlin/com/igorwojda/list/product)
 - [x] [Capitalize first](src/test/kotlin/com/igorwojda/list/capitalizefirst)
-- [ ] [Decapitalize const](src/test/kotlin/com/igorwojda/string/decapitalizeconst)
+- [x] [Decapitalize const](src/test/kotlin/com/igorwojda/string/decapitalizeconst)
 - [ ] [Longest word](src/test/kotlin/com/igorwojda/string/longestword)
 
 **Intermediate**
